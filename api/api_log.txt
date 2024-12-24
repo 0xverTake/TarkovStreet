@@ -1,0 +1,100 @@
+
+2024-12-23 23:40:45 - Nouvelle requête
+Code HTTP: 200
+Réponse: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}]}]}
+Réponse finale: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}]}]}
+
+2024-12-23 23:40:53 - Nouvelle requête
+Code HTTP: 200
+Réponse: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+Réponse finale: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+
+2024-12-23 23:42:35 - Nouvelle requête
+Code HTTP: 200
+Réponse: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+Réponse finale: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+
+2024-12-23 23:42:37 - Nouvelle requête
+Code HTTP: 200
+Réponse: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+Réponse finale: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+
+2024-12-23 23:44:36 - Nouvelle requête
+Code HTTP: 200
+Réponse: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+Réponse finale: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+
+2024-12-23 23:45:45 - Nouvelle requête
+Code HTTP: 200
+Réponse: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+Réponse finale: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+
+2024-12-23 23:45:46 - Nouvelle requête
+Code HTTP: 200
+Réponse: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}]}]}
+Réponse finale: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}]}]}
+
+2024-12-23 23:45:48 - Nouvelle requête
+Code HTTP: 200
+Réponse: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+Réponse finale: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+
+2024-12-23 23:48:40 - Nouvelle requête
+Code HTTP: 200
+Réponse: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+Réponse finale: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+
+2024-12-23 23:48:44 - Nouvelle requête
+Code HTTP: 200
+Réponse: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+Réponse finale: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+
+2024-12-23 23:49:38 - Nouvelle requête
+Code HTTP: 200
+Réponse: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+Réponse finale: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+
+2024-12-23 23:49:40 - Nouvelle requête
+Code HTTP: 200
+Réponse: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+Réponse finale: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+
+2024-12-23 23:49:46 - Nouvelle requête
+Code HTTP: 200
+Réponse: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+Réponse finale: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+
+2024-12-23 23:51:41 - Nouvelle requête
+Code HTTP: 200
+Réponse: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}]}]}
+Réponse finale: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}]}]}
+
+2024-12-23 23:52:14 - Nouvelle requête
+Code HTTP: 200
+Réponse: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+Réponse finale: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+
+2024-12-23 23:52:49 - Nouvelle requête
+Code HTTP: 200
+Réponse: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+Réponse finale: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+
+2024-12-23 23:52:51 - Nouvelle requête
+Code HTTP: 200
+Réponse: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+Réponse finale: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+
+2024-12-23 23:53:21 - Nouvelle requête
+Code HTTP: 200
+Réponse: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+Réponse finale: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+
+2024-12-23 23:55:05 - Nouvelle requête
+Code HTTP: 200
+Réponse: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+Réponse finale: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}],"extensions":{"http":{"spec":true,"status":400}}}]}
+
+2024-12-23 23:57:00 - Nouvelle requête
+Code HTTP: 200
+Réponse: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}]}]}
+Réponse finale: {"errors":[{"message":"Unknown argument \"sort\" on field \"Query.items\".","locations":[{"line":2,"column":19}]}]}

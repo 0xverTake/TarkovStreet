@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarkov Street - Cartes Interactives</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/cartes.css">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="assets/img/logo.png" alt="Logo">
+            <span>Tarkov Street</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="market.html">Prix du Marché</a></li>
+            <li><a href="cartes.html" class="active">Cartes</a></li>
+            <li><a href="quests.html">Quêtes</a></li>
+            <li><a href="chat.html">Assistant IA</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenu principal -->
+    <main class="main-content">
+        <!-- Sélecteur de carte -->
+        <div class="map-selector">
+            <div class="map-list">
+                <!-- Les cartes seront ajoutées dynamiquement ici -->
+            </div>
+        </div>
+
+        <!-- Interface de la carte -->
+        <div class="map-interface">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Info de la carte -->
+                <div class="map-info">
+                    <h2 id="map-name">Sélectionnez une carte</h2>
+                    <div id="map-details">
+                        <span><i class="fas fa-clock"></i> --:-- min</span>
+                        <span><i class="fas fa-users"></i> -- - --</span>
+                    </div>
+                </div>
+
+                <!-- Filtres -->
+                <div class="filters-section">
+                    <h3>Filtres</h3>
+                    <div class="filter-container">
+                        <!-- Les filtres seront ajoutés dynamiquement ici -->
+                    </div>
+                </div>
+
+                <!-- Recherche -->
+                <div class="search-section">
+                    <h3>Recherche</h3>
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Rechercher un point d'intérêt...">
+                        <div class="search-results"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conteneur de la carte -->
+            <div class="map-container" id="map-container">
+                <div id="map"></div>
+                <div class="map-controls">
+                    <button id="reset-view" title="Réinitialiser la vue">
+                        <i class="fas fa-crosshairs"></i>
+                    </button>
+                    <button id="fullscreen" title="Plein écran">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                    <button id="add-marker" title="Ajouter un marqueur">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal pour les marqueurs -->
+    <div id="marker-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Ajouter un marqueur</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="marker-name" placeholder="Nom du marqueur" required>
+                <textarea id="marker-description" placeholder="Description (optionnel)"></textarea>
+                <div class="color-picker">
+                    <label for="marker-color">Couleur :</label>
+                    <input type="color" id="marker-color" value="#ff0000">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="save-marker" class="btn-primary">Sauvegarder</button>
+                <button class="close-modal btn-secondary">Annuler</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À Propos</h3>
+                <p>Tarkov Helper est votre compagnon idéal pour maximiser votre expérience sur Escape from Tarkov.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="market.html">Prix du Marché</a></li>
+                    <li><a href="cartes.html">Cartes</a></li>
+                    <li><a href="quests.html">Quêtes</a></li>
+                    <li><a href="chat.html">Assistant IA</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tarkov Helper. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="module" src="assets/js/cartes.js"></script>
+</body>
+</html>

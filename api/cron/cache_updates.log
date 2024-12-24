@@ -1,0 +1,14 @@
+[2024-12-24 00:28:43] Début de la mise à jour du cache
+[2024-12-24 00:28:43] Téléchargement des données depuis l'API...
+[2024-12-24 00:28:44] Cache mis à jour avec succès - 3525 items
+[2024-12-24 00:28:44] Mise à jour terminée avec succès
+[2024-12-24 04:00:01] Début de la mise à jour du cache
+[2024-12-24 04:00:01] Sauvegarde de l'ancien cache créée
+[2024-12-24 04:00:01] Téléchargement des données depuis l'API...
+[2024-12-24 04:00:02] Cache mis à jour avec succès - 3525 items
+[2024-12-24 04:00:02] Mise à jour terminée avec succès
+[2024-12-24 09:02:08] Début de la mise à jour du cache
+[2024-12-24 09:02:08] Sauvegarde de l'ancien cache créée
+[2024-12-24 09:02:08] Téléchargement des données depuis l'API...
+[2024-12-24 09:02:08] ERREUR: Erreur HTTP 401: {"error":"Access denied"}
+[2024-12-24 09:02:08] Restauration de la sauvegarde effectuée

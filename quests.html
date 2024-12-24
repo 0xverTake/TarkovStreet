@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quêtes - Escape From Tarkov</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Vidéo en arrière-plan -->
+    <div class="background-video">
+        <video autoplay muted loop playsinline id="tarkovVideo">
+            <source src="./assets/video/streets.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="nav-logo">
+            <img src="./assets/img/logo.png" alt="Tarkov Logo" class="nav-logo-img">
+        </div>
+        <ul class="nav-links">
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="market.html">Prix du Marché</a></li>
+            <li><a href="cartes.html">Cartes</a></li>
+            <li><a href="quests.html" class="active">Quêtes</a></li>
+            <li><a href="chat.html">Assistant IA</a></li>
+        </ul>
+        <div id="google_translate_element" class="nav-translate"></div>
+    </nav>
+
+    <main class="quests-container">
+        <div class="search-filters">
+            <div class="search-bar">
+                <input type="text" id="quest-search" placeholder="Rechercher une quête...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="filters">
+                <select id="level-filter">
+                    <option value="all">Tous les niveaux</option>
+                    <option value="1-10">Niveau 1-10</option>
+                    <option value="11-20">Niveau 11-20</option>
+                    <option value="21-30">Niveau 21-30</option>
+                    <option value="31-40">Niveau 31-40</option>
+                    <option value="41+">Niveau 41+</option>
+                </select>
+                <select id="difficulty-filter">
+                    <option value="all">Toutes difficultés</option>
+                    <option value="facile">Facile</option>
+                    <option value="moyen">Moyen</option>
+                    <option value="difficile">Difficile</option>
+                </select>
+                <select id="sort-by">
+                    <option value="level">Trier par niveau</option>
+                    <option value="name">Trier par nom</option>
+                    <option value="trader">Trier par commerçant</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Filtres des commerçants -->
+        <div class="traders-filter">
+            <h2>Commerçants</h2>
+            <div class="traders-grid">
+                <!-- Les commerçants seront ajoutés dynamiquement via JavaScript -->
+            </div>
+        </div>
+
+        <!-- Liste des quêtes -->
+        <div class="quests-list">
+            <!-- Les quêtes seront ajoutées dynamiquement via JavaScript -->
+        </div>
+
+        <!-- Message d'erreur -->
+        <div id="error-message" class="error-message" style="display: none;">
+            Une erreur s'est produite lors du chargement des données.
+        </div>
+
+        <!-- Indicateur de chargement -->
+        <div id="loading" class="loading-spinner">
+            <i class="fas fa-spinner fa-spin"></i>
+            <span>Chargement des quêtes...</span>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À Propos</h3>
+                <p>Tarkov Helper est votre compagnon idéal pour maximiser votre expérience sur Escape from Tarkov.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="market.html">Prix du Marché</a></li>
+                    <li><a href="cartes.html">Cartes</a></li>
+                    <li><a href="quests.html">Quêtes</a></li>
+                    <li><a href="chat.html">Assistant IA</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tarkov Helper. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="./assets/js/api.js"></script>
+    <script type="module" src="./assets/js/translations.js"></script>
+    <script type="module" src="./assets/js/quests.js"></script>
+    <script type="module" src="./assets/js/video-background.js"></script>
+    <script type="module" src="./assets/js/cinematic-effects.js"></script>
+    <script type="module" src="./assets/js/auto-translate.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'fr'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

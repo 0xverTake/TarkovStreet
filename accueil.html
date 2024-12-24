@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape From Tarkov - Accueil</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="home-page">
+     <!-- Vidéo en arrière-plan -->
+     <div class="background-video">
+        <video autoplay muted loop playsinline id="tarkovVideo">
+            <source src="./assets/video/streets.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+    <nav class="main-nav">
+        <div class="nav-logo">
+            <img src="./assets/img/logo.png" alt="Tarkov Logo" class="nav-logo-img">
+        </div>
+        <ul class="nav-links">
+            <li><a href="accueil.html" class="active">Accueil</a></li>
+            <li><a href="market.html">Prix du Marché</a></li>
+            <li><a href="cartes.html">Cartes</a></li>
+            <li><a href="quests.html">Quêtes</a></li>
+            <li><a href="chat.html">Assistant IA</a></li>
+        </ul>
+        <div id="google_translate_element" class="nav-translate"></div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue sur Tarkov Street</h1>
+            <p>Votre guide essentiel pour Escape from Tarkov</p>
+            <div class="button-container">
+                <a href="market.html" class="cta-button">
+                    <i class="fas fa-coins"></i>
+                    Prix du Marché
+                </a>
+                <a href="quests.html" class="cta-button">
+                    <i class="fas fa-tasks"></i>
+                    Quêtes
+                </a>
+                <a href="cartes.html" class="cta-button">
+                    <i class="fas fa-map"></i>
+                    Cartes
+                </a>
+                <a href="chat.html" class="cta-button">
+                    <i class="fas fa-robot"></i>
+                    Assistant IA
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="features">
+            <div class="feature-card">
+                <i class="fas fa-coins"></i>
+                <h2>Prix du Marché</h2>
+                <p>Suivez les prix en temps réel des objets les plus recherchés</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-map"></i>
+                <h2>Cartes Détaillées</h2>
+                <p>Explorez les cartes avec tous les points d'intérêt</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-tasks"></i>
+                <h2>Guides des Quêtes</h2>
+                <p>Progressez efficacement dans vos missions</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-robot"></i>
+                <h2>Assistant IA</h2>
+                <p>Obtenez des réponses instantanées à vos questions sur Tarkov</p>
+            </div>
+        </section>
+
+        <section class="news">
+            <h2>Dernières Actualités</h2>
+            <div class="news-grid">
+                <article class="news-card">
+                    <img src="assets/img/strestlogo.jpg" alt="Streets of Tarkov">
+                    <div class="news-content">
+                        <h3>Streets of Tarkov</h3>
+                        <p>Explorez la nouvelle zone urbaine</p>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <img src="assets/img/gdnd.png" alt="Ground Zero">
+                    <div class="news-content">
+                        <h3>Ground Zero</h3>
+                        <p>Découvrez la nouvelle map souterraine</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À Propos</h3>
+                <p>Tarkov Helper est votre compagnon idéal pour maximiser votre expérience sur Escape from Tarkov.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="market.html">Prix du Marché</a></li>
+                    <li><a href="cartes.html">Cartes</a></li>
+                    <li><a href="quests.html">Quêtes</a></li>
+                    <li><a href="chat.html">Assistant IA</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tarkov Helper. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="./assets/js/video-background.js"></script>
+    <script src="./assets/js/cinematic-effects.js"></script>
+</body>
+</html>

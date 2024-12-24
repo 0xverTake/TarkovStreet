@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape From Tarkov - Assistant IA</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .chat-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: rgba(20, 20, 20, 0.9);
+            border-radius: 5px;
+            padding: 1rem;
+            border: 1px solid rgba(199, 185, 140, 0.3);
+        }
+
+        .chat-messages {
+            height: 400px;
+            overflow-y: auto;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+        }
+
+        .message {
+            margin-bottom: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            max-width: 80%;
+        }
+
+        .user-message {
+            background: rgba(199, 185, 140, 0.1);
+            margin-left: auto;
+            border-left: 3px solid #c7b98c;
+        }
+
+        .ai-message {
+            background: rgba(255, 215, 0, 0.1);
+            margin-right: auto;
+            border-right: 3px solid #ffd700;
+        }
+
+        .chat-input {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .chat-input textarea {
+            flex: 1;
+            padding: 0.5rem;
+            border-radius: 5px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(199, 185, 140, 0.3);
+            color: #c7b98c;
+            resize: none;
+            min-height: 50px;
+        }
+
+        .chat-input button {
+            padding: 0.5rem 1rem;
+            background: rgba(199, 185, 140, 0.2);
+            border: 1px solid #c7b98c;
+            color: #c7b98c;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .chat-input button:hover {
+            background: rgba(199, 185, 140, 0.3);
+        }
+
+        .chat-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #c7b98c;
+        }
+
+        .chat-header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .chat-header p {
+            color: rgba(199, 185, 140, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <!-- Vidéo en arrière-plan -->
+    <div class="background-video">
+        <video autoplay muted loop playsinline id="tarkovVideo">
+            <source src="./assets/video/streets.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <nav class="main-nav">
+        <div class="nav-logo">
+            <img src="./assets/img/logo.png" alt="Tarkov Logo" class="nav-logo-img">
+        </div>
+        <ul class="nav-links">
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="market.html">Prix du Marché</a></li>
+            <li><a href="cartes.html">Cartes</a></li>
+            <li><a href="quests.html">Quêtes</a></li>
+            <li><a href="chat.html" class="active">Assistant IA</a></li>
+        </ul>
+        <div id="google_translate_element" class="nav-translate"></div>
+    </nav>
+
+    <main>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h1>Assistant Tarkov</h1>
+                <p>Posez vos questions sur Escape from Tarkov</p>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message ai-message">
+                    Bonjour, je suis votre assistant Tarkov. Je peux répondre à vos questions concernant Escape from Tarkov. Comment puis-je vous aider aujourd'hui ?
+                </div>
+            </div>
+            <div class="chat-input">
+                <textarea id="userInput" placeholder="Posez votre question ici..." rows="2"></textarea>
+                <button id="sendButton">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À Propos</h3>
+                <p>Tarkov Helper est votre compagnon idéal pour maximiser votre expérience sur Escape from Tarkov.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="market.html">Prix du Marché</a></li>
+                    <li><a href="cartes.html">Cartes</a></li>
+                    <li><a href="quests.html">Quêtes</a></li>
+                    <li><a href="chat.html">Assistant IA</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tarkov Helper. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/video-background.js"></script>
+    <script src="./assets/js/cinematic-effects.js"></script>
+    <script src="./assets/js/chat.js"></script>
+</body>
+</html>

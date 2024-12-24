@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marché - Escape From Tarkov</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Vidéo en arrière-plan -->
+    <div class="background-video">
+        <video autoplay muted loop playsinline id="tarkovVideo">
+            <source src="./assets/video/streets.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-logo">
+            <img src="./assets/img/logo.png" alt="Tarkov Logo" class="nav-logo-img">
+        </div>
+        <ul class="nav-links">
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="market.html" class="active">Prix du Marché</a></li>
+            <li><a href="cartes.html">Cartes</a></li>
+            <li><a href="quests.html">Quêtes</a></li>
+            <li><a href="chat.html">Assistant IA</a></li>
+        </ul>
+        <div id="google_translate_element" class="nav-translate"></div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <main class="market-container">
+        <!-- Barre de recherche et filtres -->
+        <div class="market-header">
+            <div class="search-bar">
+                <input type="text" id="market-search" placeholder="Rechercher un objet...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+            <div class="market-filters">
+                <select id="category-filter">
+                    <option value="">Toutes les catégories</option>
+                    <option value="weapons">Armes</option>
+                    <option value="armor">Armures</option>
+                    <option value="ammo">Munitions</option>
+                    <option value="meds">Médical</option>
+                    <option value="keys">Clés</option>
+                    <option value="barter">Troc</option>
+                </select>
+                <select id="trader-filter">
+                    <option value="">Tous les marchands</option>
+                    <option value="prapor">Prapor</option>
+                    <option value="therapist">Therapist</option>
+                    <option value="skier">Skier</option>
+                    <option value="peacekeeper">Peacekeeper</option>
+                    <option value="mechanic">Mechanic</option>
+                    <option value="ragman">Ragman</option>
+                    <option value="jaeger">Jaeger</option>
+                </select>
+                <div class="price-filter">
+                    <input type="number" id="min-price" placeholder="Prix min">
+                    <input type="number" id="max-price" placeholder="Prix max">
+                </div>
+            </div>
+        </div>
+
+        <!-- Grille des objets -->
+        <div class="market-grid" id="market-items">
+            <!-- Les items seront ajoutés dynamiquement ici -->
+        </div>
+
+    <!-- Template pour un item -->
+    <template id="item-template">
+        <div class="market-item" data-item-id="">
+            <div class="item-image">
+                <img src="" alt="">
+                <div class="item-trader-icon">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="item-info">
+                <h3 class="item-name"></h3>
+                <div class="item-price">
+                    <span class="price-value"></span>
+                    <span class="price-currency"></span>
+                </div>
+                <div class="item-stats">
+                    <span class="stat-change"></span>
+                    <span class="last-update"></span>
+                </div>
+                <button class="details-button">Voir les détails</button>
+            </div>
+        </div>
+    </template>
+
+    <!-- Modal pour les détails d'un item -->
+    <div id="item-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <img src="" alt="" class="modal-item-image">
+                <div class="modal-item-info">
+                    <h2 class="modal-item-name"></h2>
+                    <p class="modal-item-category"></p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="price-section">
+                    <h3>Prix</h3>
+                    <div class="best-price">
+                        <span>Meilleur prix:</span>
+                        <span class="modal-best-price"></span>
+                    </div>
+                    <div class="trader-prices">
+                        <h4>Prix des marchands</h4>
+                        <ul class="modal-trader-prices"></ul>
+                    </div>
+                </div>
+                <div class="properties-section">
+                    <h3>Propriétés</h3>
+                    <div class="modal-properties"></div>
+                </div>
+                <div class="links-section">
+                    <a href="" target="_blank" class="wiki-link">
+                        <i class="fas fa-book"></i> Wiki
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À Propos</h3>
+                <p>Tarkov Helper est votre compagnon idéal pour maximiser votre expérience sur Escape from Tarkov.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="market.html">Prix du Marché</a></li>
+                    <li><a href="cartes.html">Cartes</a></li>
+                    <li><a href="quests.html">Quêtes</a></li>
+                    <li><a href="chat.html">Assistant IA</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tarkov Helper. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="./assets/js/market.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'fr'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
